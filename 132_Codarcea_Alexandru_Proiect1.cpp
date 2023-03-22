@@ -2069,6 +2069,11 @@ int main()
                     case 6:
                     {
                         clearScreen();
+                        if(listaAntrenori.size()==0)
+                        {
+                            clearScreen();
+                            break;
+                        }
                         for(int i=0; i<listaAntrenori.size(); i++)
                             cout<<listaAntrenori[i]<<endl;
                         cout<<"Apasa 'enter' pentru a reveni la meniu."<<endl;
@@ -2081,6 +2086,11 @@ int main()
                     case 7:
                     {
                         clearScreen();
+                        if(listaAbonamente.size()==0)
+                        {
+                            clearScreen();
+                            break;
+                        }
                         for(int i=0; i<listaAbonamente.size(); i++)
                             cout<<listaAbonamente[i]<<endl;
                         cout<<"Apasa 'enter' pentru a reveni la meniu."<<endl;
@@ -2093,6 +2103,11 @@ int main()
                     case 8:
                     {
                         clearScreen();
+                        if(listaEchipamente.size()==0)
+                        {
+                            clearScreen();
+                            break;
+                        }
                         for(int i=0; i<listaEchipamente.size(); i++)
                             cout<<listaEchipamente[i]<<endl;
                         cout<<"Apasa 'enter' pentru a reveni la meniu."<<endl;
@@ -2107,6 +2122,13 @@ int main()
                     case 9:
                     {
                         clearScreen();
+                        if(listaMembrii.size()==0)
+                        {
+                            clearScreen();
+                            break;
+                        }
+                        for(int i=0; i<listaMembrii.size(); i++)
+                            cout<<listaMembrii[i]<<endl;
                         cout<<"Introduceti ID-ul membrului pe care doriti sa-l eliminati: ";
                         int id;
                         cin>>id;
@@ -2120,6 +2142,13 @@ int main()
                     case 10:
                     {
                         clearScreen();
+                        if(listaAntrenori.size()==0)
+                        {
+                            clearScreen();
+                            break;
+                        }
+                        for(int i=0; i<listaAntrenori.size(); i++)
+                            cout<<listaAntrenori[i]<<endl;
                         cout<<"Introduceti ID-ul antrenorului pe care doriti sa-l eliminati: ";
                         int id;
                         cin>>id;
@@ -2134,7 +2163,11 @@ int main()
                     {
 
                         clearScreen();
-
+                        if(listaAbonamente.size()==0)
+                        {
+                            clearScreen();
+                            break;
+                        }
                         for(int i=0; i<listaAbonamente.size(); i++)
                             cout<<i<<"."<<listaAbonamente[i]<<endl;
                         cout<<"Introduceti nr-ul abonamentului pe care doriti sa-l stergeti: ";
@@ -2156,7 +2189,11 @@ int main()
                     {
 
                         clearScreen();
-
+                        if(listaEchipamente.size()==0)
+                        {
+                            clearScreen();
+                            break;
+                        }
                         for(int i=0; i<listaEchipamente.size(); i++)
                             cout<<i<<"."<<listaEchipamente[i]<<endl;
                         cout<<"Introduceti nr-ul echipamentului pe care doriti sa-l stergeti: ";
@@ -2179,6 +2216,13 @@ int main()
                     case 13:
                     {
                         clearScreen();
+                        if(listaAntrenori.size()==0)
+                        {
+                            clearScreen();
+                            break;
+                        }
+                        for(int i=0; i<listaAntrenori.size(); i++)
+                            cout<<listaAntrenori[i]<<endl;
                         cout<<"Introduceti ID-ul antrenorului caruia doriti sa ii schimbati salariul: ";
                         int id;
                         cin>>id;
@@ -2285,9 +2329,4 @@ int main()
     return 0;
 
 
-
-
-
-
 }
-
